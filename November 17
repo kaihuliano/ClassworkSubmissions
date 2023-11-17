@@ -1,0 +1,26 @@
+/**
+ * build a method that prints out increments of 18 starting at -4
+ */
+public class SimpleLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//declare initial int value
+		int n = -22;
+		
+		//instantiate for loop
+		for(int i = 1; i < 7; i += 1)
+		{
+			//body aka work work work work work work
+			int k = n + 18;
+			n = k;
+			System.out.println(k);
+			
+			
+		}
+		
+		
+	}
+
+}
