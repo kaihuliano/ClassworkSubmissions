@@ -1,0 +1,59 @@
+/**
+ * create a class to multiply two ints
+ */
+public class MathStuff {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//declare two numbers to test math methods on
+		int myInt = -4;
+		double myDub = -16.0;
+		
+		//test the sqrt method. it should find the square root
+		double mySqrt = Math.sqrt(myDub);
+		System.out.println(mySqrt);
+		
+		//test the abs method. It should produce what?
+		double myAbsDub = Math.abs(myDub);
+		System.out.println(myAbsDub);
+		
+		double myAbsInt = Math.abs(myInt);
+		System.out.println(myAbsInt);
+		
+	
+		//test the pow method
+		//to the power of the second number
+		//it only returns double
+		double base = 2.0;
+		double exp = 5.0;
+		double prod = Math.pow(base, exp);
+		System.out.println(prod);
+		
+		
+		
+		
+	//call method
+	multTwoNums(6,9);
+	
+	//declare init
+	int n;
+	int x;
+		
+	}
+	
+	public static void multTwoNums(int i, int j) {
+		// TODO Auto-generated method stub
+		int x = i;
+		//multiply two ints
+		for(; j>1; j--)
+		{
+			//work
+			i*=x;
+			
+		
+		}
+		System.out.println(i);
+	}
+
+}
