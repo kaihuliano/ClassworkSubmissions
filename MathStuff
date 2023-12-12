@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * create a class to multiply two ints
  */
@@ -37,7 +39,6 @@ public class MathStuff {
 	multTwoNums(6,9);
 	
 	//declare init
-	int n;
 	int x;
 		
 	}
@@ -54,6 +55,122 @@ public class MathStuff {
 		
 		}
 		System.out.println(i);
+		
+		//Task 1: instantiate an integer object
+		Integer myInteger = 4;
+		
+		//print out the max and min values an integer can store
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.MAX_VALUE);
+		
+		//Task 2: instantiate a double object
+		Double myDouble = 6.6;
+		
+		//print out the max and min values an integer can store
+		System.out.println(Double.MIN_VALUE);
+		System.out.println(Double.MAX_VALUE);
+		
+		//Task 3: Declare an Int and print it as a double
+		int a = 5;
+		System.out.println( (double)a );
+		
+		//Take 4: Declare a double and print it as an int
+		double b = 6.2;
+		System.out.println( (int)b );
+		
+		
+		
+		
+		
+		//Task 1: Create a method that generates a random number 1-10
+		Random rn = new Random();
+		int answer = rn.nextInt(10) + 1;
+		System.out.println(answer);
+		
+		//Task 2: create two ints called int a and int b that have values of -36 and 12
+		int intA = -36;
+		int intB = 12;
+		
+		
+		//Task 3: declare two doubles that have values of -100.0 and 0.64
+		double dubA = -100.0;
+		double dubB = 0.64;
+		
+		//Task 4: instantiate two integer objects that have the same values as the int
+		Integer integerA = -36;
+		Integer integerB = 12;
+		
+		//Task 5: instatiate two integer objects that have the same values as the dubs
+		Double doubleA = -100.0;
+		Double doubleB = 0.64;
+		
+		//calls method that multiplies int
+		multTwoNums(intA,intB);
+
+		//calls method that multiplies int objects
+		multTwoNums(integerA, integerB);
+
+		//calls method that multiplies ints
+		//casts doubles as ints before multiplying
+		multTwoNums((int) dubA, (int) dubB);
+
+		//calls method that multiplies ints
+		//finds int value of double before multiplying
+		multTwoNums((doubleA.intValue()), doubleB.intValue());
+
+		//prints absolute value of an int
+		System.out.println(Math.abs(intA));
+
+		//prints absolute value of an int object
+		System.out.println(Math.abs(integerB));
+
+		//prints absolute value of a double
+		System.out.println(Math.abs(dubA));
+
+		//prints absolute value of a double object
+		System.out.println(Math.abs(doubleB));
+
+		//prints square root of a double
+		System.out.println(Math.sqrt(dubA));
+
+		//prints square root of a double object
+		System.out.println(Math.sqrt(doubleB));
+
+		//prints the square root of the absolute value of an int
+		System.out.println(Math.sqrt(Math.abs(intA)));
+
+		//prints the square root of the absolute value of an int object
+		System.out.println(Math.sqrt(Math.abs(integerB)));
+
+		//prints the value of one double raised to the value of another
+		System.out.println(Math.pow(dubA, dubB));
+
+		//prints the value of one int cast as double to the power of a double
+		System.out.println(Math.pow((double)intB, dubA));
+
+		//prints the value of a double raised to an int value
+		System.out.println(Math.pow(dubA, intB));
+		
+		
+		/**
+		 * this method takes in two integer objects and returns their sum as an int.
+		 * Even though the formal parameters are Integers,
+		 * it will turn passed ints into Integers automatically
+		 * This process is called autoboxing
+		 * 
+		 * @param a the first additive
+		 * @param b the second derivative
+		 * 
+		 * @return the sum of a and b as an int even though we are adding Integers
+		 */
+		public static int addTwoIntegers(Integer a, Integer b);
+		{
+			return a.intValue() + b.intValue() ;
+
+		}
+		
+		
+		
 	}
 
 }
