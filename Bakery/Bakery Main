@@ -1,0 +1,69 @@
+/**
+ * This class is the main class
+ * It is used to generate multiple baked goods that we will define
+ * the behavior of in their own classes
+ * Here, all we'll do is create the baked goods
+ * And maybe print some info
+ */
+public class BakeryMain {
+
+	/**
+	 * The main method is a method that always runs
+	 * whenever the class is run. We don't need to
+	 * call its name. It just runs.
+	 * 
+	 * This is the method where we will instantiate new baked goods
+	 * And also print stuff
+	 * 
+	 * @param args(Idk why this is needed
+	 */
+	public static void main(String[] args) {
+		
+		//instantiate first baked good, a pie
+		Pie myFirstPie = new Pie("Pumpkin");
+
+		//instantiate second baked good, another pie
+		Pie mySecondPie = new Pie("Apple");
+		
+		//testing to tell if the tellYummy method works
+		myFirstPie.tellMeIfYummy();
+		
+		//create method to tell flavor
+		mySecondPie.tellFlavor();
+		
+		//instantiate third baked good, a cake
+		Cake myFirstCake = new Cake("Pound");
+		
+		//create method to get/tell flavor
+		myFirstCake.getFlavor();
+		
+		//create method to return amount of layers
+		myFirstCake.getLayer(); 
+		
+		//make a new pie called father pie
+		Pie fatherPie = new Pie("Kai" , 10);
+		//print father pie slice count
+		System.out.println(fatherPie.getSlices());
+		
+		//instantiate new pie that have the same values as fatherpie
+		Pie kidPie = fatherPie;
+		
+		//changes flavor of the cake to the input string
+		kidPie.tellFlavor();
+		System.out.println(kidPie.getSlices());
+		
+		//create a method that just prints out "the cake is yummy"
+		myFirstCake.tellIfTasty();
+		
+		//create a method called "incrementLayer" which adds ones to the Cakes layer int
+		myFirstCake.incrementLayer(0);
+		
+		//set and print fatherPie slices
+		fatherPie.setSlices(16);
+		System.out.println(fatherPie.getSlices());
+		
+		//print out kidpie slices
+		System.out.println(kidPie.getSlices());
+	}
+
+}
