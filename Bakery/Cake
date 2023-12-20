@@ -1,0 +1,47 @@
+/**
+ * This class defines the qualities of el cake
+ * for example flavors, taste, etc.
+ */
+public class Cake {
+
+	int layer;
+	
+	this.layers = x;
+	
+	//create contructah
+	public Cake(String flavor) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	//Create a string for flavors
+	String flavor = new String("Lemon");
+
+	/**
+	 * Print what flavor da cake has
+	 */
+	public void getFlavor() {
+		// TODO Auto-generated method stub
+		System.out.println("This cake is " + this.flavor + " flavor");
+		
+	}
+
+	public int getLayer() {
+		// TODO Auto-generated method stub
+		return 2;
+	}
+
+	public void tellIfTasty() {
+		// TODO Auto-generated method stub
+		System.out.println("The cake is yummy");
+		
+	}
+
+	public void incrementLayer(int i) {
+		// TODO Auto-generated method stub
+		layer++;
+	}
+	  
+	
+	
+}
