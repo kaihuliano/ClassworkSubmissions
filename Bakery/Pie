@@ -1,0 +1,72 @@
+/**
+ * This class defines the qualities and behaviors
+ * of a pie object. It should have a flavor
+ */
+public class Pie {
+	//properties of pies
+	
+	//number of slices
+	int slices;
+	
+	//a property that determines if our pie has crust
+	boolean hasCrust;
+	
+	//A property that stores the pie's flavor
+	String filling = new String("Mango");
+	
+	/**
+	 * Constructor for if the user wants a different slice count than 8.
+	 * must let them pass flavor and
+	 * 
+	 * @param flavor determines the flavor of the pie
+	 */
+	//constructor
+	public Pie(String flavor) {
+		//assign a flavor to this pie as it is created
+		this.filling = flavor;
+		
+		//assign the pie a crust or no crust
+		this.hasCrust = true;
+		
+		this.slices = 8;
+	}
+	
+	public Pie(String string, int i) {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * Print/tell me if the pie is yummy
+	 * All pies are yummy, so this method
+	 * will always tell me the pie is yummy
+	 */
+	public static void tellMeIfYummy() {
+		//print statement to tell us its yummy
+		System.out.println("The pie is so ono brah!");
+		
+}
+	
+	/**
+	 * Print what filling the pie has, the object will have different
+	 * filling depending on the user's input when making the pie
+	 */
+	public void tellFlavor() {
+		System.out.println("This pie is filled with " + this.filling);
+	}
+	
+	/**
+	 * change the slice count
+	 */
+	public void setSlices(int count)
+	{
+		this.slices = count;
+	}
+	
+	/**
+	 * this returns the current slices
+	 */
+	public int getSlices()
+	{
+		
+	}
+}
