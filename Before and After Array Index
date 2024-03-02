@@ -1,0 +1,41 @@
+/**
+ * class that will create an array and print out the numbers before and after an element at a 
+ * random index in the array
+ */
+public class PrevandNextElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+    //create double array
+	double[] nums = {1.11, 2.22, 3.33, 4.44};
+	//instantiate int index
+	int n = 2;
+	//call method to do my bidding
+	printFirstNextElement(nums, n);
+		
+		
+	}
+	/**
+	 * method to print the numbers before and after the index"n"
+	 * @param nums
+	 * @param n
+	 */
+	private static void printFirstNextElement(double[] nums, int n) {
+		// TODO Auto-generated method stub
+		
+		//store number before index to new double
+		double x = nums[n - 1];
+		
+		//store number after index to new double
+		double y = nums[n + 1];
+		
+		//print statement to state the number before and after the index
+		System.out.println("The number before the element at index 2 is " + x + 
+				"the numbers behind the element at index 2 is " + y);
+		
+		
+		
+	}
+
+}
