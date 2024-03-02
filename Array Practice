@@ -1,0 +1,50 @@
+			//TASK 1: make a method that returns an ARRAY of the first
+		//and last elements of a passed array
+		
+		//for example {4, 7, 12, 3} --returns---> {4, 3}
+		//create a new int array
+		int[] arr4 = {3, 4, 5};
+		//instantiate a new method that will turn old array into new array
+		int[] newArr2 = firstAndLastDakine(arr4);
+		//print the new array
+		System.out.println(newArr2);
+		
+		//TASK 2: make a method that changes an array. it should be 
+		//passed the array and the index you want to change.
+		//it will divide specified index by 2
+		
+		//for example ( {2, 4, 6, 8} , 2 ) ---> {2, 4, 3, 8}
+		//create new int  array
+		int[] arr5 = {2, 4, 6, 8};
+		//cal a method to change initial array
+		int[]newArr3 = divideSpecifiedByTwo(arr5);
+		//print new array
+		System.out.println(newArr3);
+		
+		
+	}
+	/**
+	 * array that will turn old array into new 
+	 * @param arr5
+	 * @return
+	 */
+	private static int[] divideSpecifiedByTwo(int[] arr5) {
+		// TODO Auto-generated method stub
+		int z = arr5[arr5.length-2];
+		int n = z/2;
+		int[] tempArr2 = {2, 4, n, 8};
+		return tempArr2;
+	}
+
+	/**
+	 * method that will return only the first and last elements of an array
+	 * @param arr4
+	 * @return
+	 */
+	private static int[] firstAndLastDakine(int[] arr4) {
+		// TODO Auto-generated method stub
+		int x = arr4[0];
+		int y = arr4[arr4.length-1];
+		int[] tempArr = { x , y };
+		return tempArr;
+	}
