@@ -1,0 +1,146 @@
+
+public class TraversalMethodsPrac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//instantiate int arr
+		int[] arr = {1, 2, 5};
+		
+		//instantiate double array
+		double[] dubs = {3.0, 4.8, 6.9, 9.7};
+	}
+		/**
+		 * number 1:
+		 * method that is passed an int array and returns the highest value in that array.
+		 * @param arr
+		 * @return
+		 */
+		public static int highestValue(int[]arr)
+		{
+			//set a placeholder to store the highest value
+			int max = arr[0];
+			//instantiate counter
+			int i = 0;
+			//for loop that traverses all the elements in the array
+			for(; i < arr.length; i++)
+			{
+				//check if the element is greater than the previous highest element
+				if(arr[i] > max);
+				{
+					//if it is greater then store it as the max
+					max = arr[i];
+				}
+			}
+			//return the max to the method
+			return max;
+			
+		}
+		
+		/**
+		 * method 2
+		 * Make a method that is passed an array of doubles and returns a double 
+		 * that is equal to their average.
+		 */
+		private static double avgNumber (double nums[])
+		{
+			//declare a double
+			double b = 0;
+		
+			//for loop that goes through each element and making a sum
+			for (int i= 0; i<nums.length; i++)
+			{
+				//adding each element to the sum
+				b += nums[i];
+			}
+			//divide the sum by the amount of values in the array.
+			b = b/nums.length;
+			//return the averge
+			return b;
+		}
+		
+		
+		/**
+		 * method 3
+		 * Make a method that is passed an int array and returns whether or 
+		 * not the array has any even numbers in it.
+		 */
+		private static boolean checkEvenNum (int[] arr)
+		{
+			//this for loop will check for the remainder if divided by 2.
+			for (int i = 0; i< arr.length; i++)
+			{
+				//this if statement will be true if the number's remainder is 0.
+				if (arr[i] % 2 == 0)
+				{
+					//return false
+					return true;
+				}
+				}
+			return false;
+			
+		}
+			
+		/**
+		 * method 3
+		 * Make a method that is passed an int array and returns whether or 
+		 * not the array has ALL even numbers in it.
+		 */
+		private static boolean checkEvens (int[] arr)
+		{
+			//declare an int.
+			int a = 0;
+			
+			//this for loop will add 1 to x if the remainder of the value is 1.
+			for (int i = 0; i< arr.length; i++)
+			{
+				//if statement to check if the remainder is 1
+				if (arr[i] % 2 == 1)
+				{
+					//count if there is a 1 in the remainder meaning it is odd
+					a++;
+				}
+			}
+				// check if x is 0 and return true, if not return false
+				if (a == 0)
+				{
+					//return true if it is even
+					return true;
+				}
+			return false;
+			
+		}
+		
+		/**
+		 * method that is passed a double array and returns whether or not three
+		 *  consecutive doubles of the same value appear in the array.
+		 *  number 5
+		 */
+		public static boolean checkThreeSame(double[]dubs)
+		{
+			//instantiate a traverser
+			int traverser = 0;
+			//create a new boolean and initiate it as false
+			boolean hasThree = false;
+			//for loop that traverses the method and checks elements
+			for(;traverser < dubs.length; traverser++)
+			{
+				//check if there are 3 elements that have the same value as eachother
+				if(dubs[traverser]==dubs[traverser+1]&&dubs[traverser]==dubs[traverser+2])
+				{
+					//if there are 3 same in row then return true
+					hasThree = true;
+				}
+				else
+				{
+					//if there are no row 3 same then false it
+					hasThree = false;
+				}
+			}
+			//return the boolean valew
+			return hasThree;
+		}
+		
+	
+
+}
